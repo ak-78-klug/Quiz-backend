@@ -8,12 +8,22 @@
     "npm": "6.13.4"
   },
   "scripts": {
-    "start": "nodemon server/server.js",
+    "start": "nodemon dist/server.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run client\" \"npm start\""
   },
   "author": "",
   "license": "ISC",
+  "devDependencies": {
+    "@types/bcrypt": "^5.0.0",
+    "@types/cors": "^2.8.12",
+    "@types/express": "^4.17.13",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/mongoose": "^5.11.97",
+    "@types/multer": "^1.4.7",
+    "@types/node": "^17.0.12",
+    "typescript": "^5.0.4"
+  },
   "dependencies": {
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.3",
